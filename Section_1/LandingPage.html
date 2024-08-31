@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            text-decoration: none;
+        }
+        .hero-img{
+            height: 100vh;
+            background-image: url(/Images/d2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        nav{
+            background-color: linear-gradient(rgba(3, 0, 27, 0.65), rgba(6, 0, 50, 0.65));
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+            position: sticky;
+            top: 0px;
+        }
+        .logo{
+            margin-left: 50px;
+            text-decoration: none;
+            font-size: 35px;
+            font-weight: 600; 
+            color: white;
+        }
+        .logo:hover{
+            color: rgb(238, 152, 24);
+        }
+        li{
+            list-style: none;
+            display: inline;
+        }
+        li a{
+            color: rgb(238, 152, 24);
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 15px;
+            margin-top: 50px;
+        }
+        li a:hover{
+            color: white;
+        }
+        button{
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            margin-right: 15px;
+        }
+        button a{
+            color: rgb(238, 152, 24);
+            font-weight: bold;
+            font-size: 15px;
+        }
+        button a:hover{
+            color: white;
+        }
+        .container{
+            margin-top: 14%;
+            color: white;
+            max-width: 620px;
+            margin-left: 70px;
+
+            p{
+                font-size: 25px;
+            }
+        }
+        .container h2{
+            font-size: 70px;
+            font-weight: 600;
+            line-height: 85px;
+            margin-bottom: 25px;
+        }
+
+
+        /* section 1 */
+        
+        
+        .feature-section{
+            height: 96vh;
+        }
+        .section-title{
+            margin-top: 10%;
+            text-align: center;
+            font-size: 35px;
+        }
+        .card-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card{
+            height: 35vh;
+            width: 25%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        
+</style>
+</head>
+
+<body>
+    <header class="hero-img">
+        <nav lass="navbar">
+            <a href="#" class="logo">Share To Care</a>
+            
+            <ul>
+                <li><a href="#" style="color: white;">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Causes</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+                <button><a href="Login.html">SignIn</a></button>
+                <button><a href="SignUp.html">SignUp</a></button>
+            </ul>
+        </nav>
+        <div class="container">
+            <h2>Let's be kind for children</h2>
+            <p>We offer amazing services to help you sccessed.</p>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="feature-section">
+            <h1 class="section-title">Our Features</h1>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fa-2x fa-solid fa-bolt"></i>
+                    <h2>Fast Solution</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel et, esse est quae maxime a
+                        perferendis deserunt ut consequatur itaque accusantium possimus tempore, amet, minima similique
+                        recusandae magni. Expedita, aut?</p>
+                </div>
+                <div class="card">
+                    <i class="fa-2x fa-solid fa-bolt"></i>
+                    <h2>Fast Solution</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel et, esse est quae maxime a
+                        perferendis deserunt ut consequatur itaque accusantium possimus tempore, amet, minima similique
+                        recusandae magni. Expedita, aut?</p>
+                </div>
+                <div class="card">
+                    <i class="fa-2x fa-solid fa-bolt"></i>
+                    <h2>Fast Solution</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel et, esse est quae maxime a
+                        perferendis deserunt ut consequatur itaque accusantium possimus tempore, amet, minima similique
+                        recusandae magni. Expedita, aut?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

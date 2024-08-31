@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideshow {
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .slide {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+          opacity: 1;
+        }
+
+        @keyframes slideShow {
+          0% {
+            transform: translateX(0);
+          }
+          25% {
+            transform: translateX(-100%);
+          }
+          50% {
+            transform: translateX(-200%);
+          }
+          75% {
+            transform: translateX(-300%);
+          }
+          100% {
+            transform: translateX(-400%);
+          }
+        }
+
+        .slideshow {
+          animation: slideShow 10s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <div class="slide">
+          <img src="image.png" height="100vh" width="100px">
+        </div>
+        <div class="slide">
+          <img src="Section_1\img1.png">
+        </div>
+        <div class="slide">
+          <img src="img2.png">
+        </div>
+        <div class="slide">
+          <img src="img3.png" height="100vh">
+        </div>
+      </div>
+</body>
+</html>
+

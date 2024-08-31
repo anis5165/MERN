@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .cards{
+            width: 17%;
+            padding: 30px;
+            /* background-color: red; */
+            border: 2px solid black;
+            box-shadow: 3px 3px 10px 2px white;
+            backdrop-filter: blur(5px);
+        }
+        body{
+            height: 96vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(m5.jpg);
+            background-repeat: no-repeat;
+            /* background-position: bottom; */
+            background-size: cover;
+            
+        }
+        .brand{
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+        .form-title{
+            color: black;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+        i{
+            position: absolute;
+            margin-top: 15px;
+            min-width: 50px;
+            color: black;
+            display: block;
+            padding-right: 40px;
+            display: flex;
+            justify-content: center;
+        }
+        .text-input{
+            display: block;
+            width: 85%;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            border-radius: 3px;
+            border: none;
+            padding: 7px;
+        }
+        .f1{
+            display: block;
+            display: inline-flex;
+        }
+        button{
+            margin-top: 15px;
+            margin-left: 27px;
+            display: block;
+            width: 90%;
+            padding: 10px;
+        }
+        .a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin-top: 10px;
+            margin-left: 75%;
+            font-size: 13px;
+        }
+        .c1{
+            /* display: inline; */
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <h2 class="brand">Share To Care</h2>
+        <div class="form-title">Sign Up</div>
+
+        <form>
+            <i class="fa-solid fa-user" class="f1"></i><input type="text" class="text-input" placeholder="Username">
+            <i class="fa-solid fa-envelope"></i><input type="email" class="text-input" placeholder="Email">
+            <i class="fa-solid fa-lock"></i><input type="password" class="text-input" placeholder="Password">
+            <input type="checkbox" class="c1">I Accept your <a href="">Terms & Condition</a></p>
+            <button class="submit-btn">Sign Up</button>
+            <a href="Login.html" class="a">Login Here</a>
+        </form>
+    </div>
+</body>
+</html>
