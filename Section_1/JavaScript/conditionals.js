@@ -8,37 +8,57 @@
 
 
 // if statement
-let age=10
-if(age > 18){
-    console.log("You can Vote")
-}
-if(age === 18){
-    console.log("You are 18 so you also can vote")
-}
-if(age < 18) console.log("You can't vote")
+// let age=10
+// if(age > 18){
+//     console.log("You can Vote")
+// }
+// if(age === 18){
+//     console.log("You are 18 so you also can vote")
+// }
+// if(age < 18) console.log("You can't vote")
 
 
 
 
 // if-else-if statement
-let age1=18
-if(age1 > 18){
-    console.log("You can Vote")
-}
-else if(age1 === 18){
-    console.log("You are 18 so you also can vote")
-}
-else console.log("You can't vote")
+// let age1=18
+// if(age1 > 18){
+//     console.log("You can Vote")
+// }
+// else if(age1 === 18){
+//     console.log("You are 18 so you also can vote")
+// }
+// else console.log("You can't vote")
 
 
 
-// age = 25;
 
-// if(age>=18) console.log("adults");
+
+
+
+// let a = 25;
+
+// if(a>=18) console.log("adult");
 // else console.log("Abhi chhote ho"); 
 
 
-num = 25;
 
-if(num%2==0) console.log("even");
-else console.log("odd"); 
+
+
+
+let a = 25
+if(a%2==0) console.log("Even")
+else console.log("ODD")
+
+
+
+
+
+
+
+
+
+// num = 25;
+
+// if(num%2==0) console.log("even");
+// else console.log("odd"); 
