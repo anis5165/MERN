@@ -4,6 +4,10 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import {useRouter} from 'next/navigation'
+
+
+
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
@@ -29,6 +33,8 @@ const SignupSchema = Yup.object().shape({
 
 const SignUp = () => {
 
+  const router = useRouter()
+
   const signupForm = useFormik({
     initialValues: {
       name: '',
@@ -43,7 +49,7 @@ const SignUp = () => {
         console.log(Response.status)
         resetForm()
         toast.success('User added successfully')
-
+        router.push('/login')
       }).catch((err) => {
         console.log(err)
         toast.error('Failed to add user')
