@@ -100,6 +100,20 @@ const Navbar = () => {
                                             >
                                                 ProductList
                                             </Link> 
+                                            <Link
+                                                className="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100"
+                                                href="/addproduct"
+                                                aria-current="page"
+                                            >
+                                                Add Product
+                                            </Link> 
+                                            <Link
+                                                className="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100"
+                                                href="/manageuser"
+                                                aria-current="page"
+                                            >
+                                                Manage User
+                                            </Link> 
                                         </div>
                                     </div>
                                     {/* Button Group */}

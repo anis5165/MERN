@@ -1,5 +1,6 @@
 //rafce
 import React from 'react'
+import style from './Home.module.css'
 
 const page = () => {
 
@@ -16,7 +17,7 @@ const page = () => {
               <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-6xl">
                 Build Better Products
               </h1>
-              <p className="mt-3 text-lg text-gray-800">
+              <p className={style.para}>
                 Introducing a new way for your brand to reach the creative community.
               </p>
               <div className="mt-5 lg:mt-8 flex flex-col items-center gap-2 sm:flex-row sm:gap-3">
