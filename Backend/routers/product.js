@@ -44,16 +44,4 @@ router.get('/getbyid/:id', (req,res) =>{
 })
 
 
-router.get('/getbyemail/:email', (req,res) =>{
-    //get data by email is the key in the database
-    Model.find({email: req.params.email})
-    .then((result) => {
-        res.json(result)
-    }).catch((err) => {
-        console.log(err)
-        res.status(500).json({error: 'Internet Server Error'})
-    });
-})
-
-
 module.exports = router;

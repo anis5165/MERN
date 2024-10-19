@@ -19,8 +19,6 @@ router.post('/add', (req,res)  => {
 
 
 
-
-
 router.get('/getall', (req,res) => {
     //EMPTY Bracket means get all data
     Model.find()
@@ -66,6 +64,19 @@ router.delete('/delete/:id', (req,res) => {
         res.status(500).json({error: 'Internet Server Error'})
     });
 })
+
+
+router.put('/update/:id', (req,res) => {
+    //new:true is used to get the updated data
+    Model.findByIdAndUpdate(req.params.id, req.body, {new:true})
+    .then((result) => {
+        res.status(200).json(result)
+    }).catch((err) => {
+        console.log(err)
+        res.status(500).json({error: 'Internet Server Error'})
+    });
+})
+
 
 
 module.exports = router;

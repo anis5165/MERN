@@ -114,6 +114,13 @@ const Navbar = () => {
                                             >
                                                 Manage User
                                             </Link> 
+                                            <Link
+                                                className="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100"
+                                                href="/manageproduct"
+                                                aria-current="page"
+                                            >
+                                                Manage Prod
+                                            </Link> 
                                         </div>
                                     </div>
                                     {/* Button Group */}
