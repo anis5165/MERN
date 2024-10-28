@@ -29,6 +29,7 @@ const Manageproduct = () => {
             <div className='w-full md:w-1/3'>
                     <div className='flex justify-between items-center mb-6  px-10'>
                         <div class="w-[70%] bg-white p-6 shadow-xl rounded-lg">
+                            <h4 className='text-center text-xl font-bold text-blue-400 mb-2'>Items</h4>
                             <h4 class="text-xl font-semibold mb-2 ">Name: {product.name}</h4>
                             <h4 class="text-xl font-semibold mb-2">Brand: {product.brand}</h4>
                             <h4 class="text-xl font-semibold mb-2">MRP: {product.MRP}</h4>
