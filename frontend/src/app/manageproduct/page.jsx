@@ -25,6 +25,16 @@ const Manageproduct = () => {
 
 
     const displayCards = () => {
+
+        <div>
+            <div>
+                <h2>Search Karo</h2>
+                <input type="search" 
+                    
+                />
+            </div>
+        </div>
+
         return productList.map((product) => (
             <div className='w-full md:w-1/3'>
                     <div className='flex justify-between items-center mb-6  px-10'>
