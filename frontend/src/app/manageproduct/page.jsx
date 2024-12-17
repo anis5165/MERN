@@ -24,17 +24,14 @@ const Manageproduct = () => {
 
 
 
+    const applysearch = (e) => {
+        const value = e.target.value;
+        setProductList(productList.filter((productList)=> {
+            return (productList.name.toLowerCase().includes(value.toLowerCase()))
+        }))
+    }
+
     const displayCards = () => {
-
-        <div>
-            <div>
-                <h2>Search Karo</h2>
-                <input type="search" 
-                    
-                />
-            </div>
-        </div>
-
         return productList.map((product) => (
             <div className='w-full md:w-1/3'>
                     <div className='flex justify-between items-center mb-6  px-10'>
@@ -53,13 +50,21 @@ const Manageproduct = () => {
 
 
     return (
+        <>
+        <div className='m-5 ml-24'>
+            <input type="search" 
+                className='p-2 border rounded-lg'
+                placeholder='search here'
+                onChange={applysearch}
+            />
+        </div>
         <div className='p-10'>
             <h1 className='text-center text-3xl front-bold mb-8 mx-2'>Products</h1>
             <div className='flex flex-wrap mx-auto'>
                 {displayCards()}
-
             </div>
         </div>
+        </>
     )
 }
 
